@@ -29,3 +29,8 @@
   ```
   $ golangci-lint run
   ```
+
+  ビルド
+  ```
+  $ CGO_ENABLED=0 go build -trimpath -ldflags '-s -w -X main.version=1.0.0' main.go
+  ```
